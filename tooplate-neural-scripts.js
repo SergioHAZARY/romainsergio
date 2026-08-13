@@ -198,36 +198,81 @@ window.addEventListener('mousemove', (e) => {
     mouse.y = e.clientY;
 });
 
-// Active state on scroll for all icon navs (sidebar + mobile)
-function updateActiveNav() {
-    const scrollPos = window.scrollY + 150;
+// ---------------------------------------------------------------------------
+// Navigation : saut d'ancre et section active
+//
+// Les deux partagent volontairement le même repère vertical. Sans cela, le
+// clic amenait la section à un endroit que la détection interprétait comme
+// appartenant encore à la section précédente : l'indicateur se posait une
+// icône trop haut, à chaque clic.
+//
+// La cause était la compensation de hauteur : elle retranchait la hauteur de
+// #navbar, or le rail de bureau est un bandeau VERTICAL de plus de 500 px.
+// Une barre horizontale en haut recouvre le contenu et doit être compensée ;
+// un rail latéral centré ne masque rien verticalement.
+// ---------------------------------------------------------------------------
 
-    // Update each nav type separately
+// Respiration entre le haut de la fenêtre et la section visée.
+const ANCHOR_GAP = 20;
+
+function getNavOffset() {
+    const mobileNav = document.getElementById('mobile-icon-nav');
+    const visible = mobileNav &&
+        mobileNav.offsetHeight > 0 &&
+        getComputedStyle(mobileNav).display !== 'none';
+    // Seule la barre mobile, fixée en haut, recouvre le contenu.
+    return visible ? mobileNav.offsetHeight : 0;
+}
+
+function setActiveSection(id) {
     ['.sidebar-icon', '.nav-icon-item'].forEach(selector => {
-        const items = document.querySelectorAll(selector);
-        if (!items.length) return;
-
-        let currentItem = items[0];
-
-        items.forEach(item => {
-            const sectionId = item.getAttribute('data-section');
-            const section = document.getElementById(sectionId);
-            if (!section) return;
-
-            if (scrollPos >= section.offsetTop) {
-                currentItem = item;
+        document.querySelectorAll(selector).forEach(item => {
+            const on = item.getAttribute('data-section') === id;
+            item.classList.toggle('active', on);
+            // Signale la section courante aux lecteurs d'écran, pas seulement
+            // visuellement via la classe « active ».
+            if (on) {
+                item.setAttribute('aria-current', 'true');
+            } else {
+                item.removeAttribute('aria-current');
             }
         });
-
-        items.forEach(i => {
-            i.classList.remove('active');
-            i.removeAttribute('aria-current');
-        });
-        currentItem.classList.add('active');
-        // Signale la section courante aux lecteurs d'écran, pas seulement
-        // visuellement via la classe « active ».
-        currentItem.setAttribute('aria-current', 'true');
     });
+}
+
+function currentSectionId() {
+    const sections = document.querySelectorAll('main section[id]');
+    if (!sections.length) return null;
+
+    // En bas de page, la dernière section est souvent trop courte pour
+    // franchir le repère : on l'active explicitement, sinon elle reste
+    // inaccessible à l'indicateur.
+    const docHeight = document.documentElement.scrollHeight;
+    if (window.innerHeight + window.scrollY >= docHeight - 2) {
+        return sections[sections.length - 1].id;
+    }
+
+    // +2 px pour absorber les arrondis de sous-pixel du défilement fluide.
+    const probe = window.scrollY + getNavOffset() + ANCHOR_GAP + 2;
+    let current = sections[0].id;
+
+    sections.forEach(section => {
+        const top = section.getBoundingClientRect().top + window.scrollY;
+        if (probe >= top) current = section.id;
+    });
+
+    return current;
+}
+
+// Pendant le défilement fluide déclenché par un clic, la détection est mise en
+// pause : sans cela l'indicateur défilerait par toutes les sections traversées
+// avant de se fixer, ce qui se lit comme un clignotement.
+let anchorLockUntil = 0;
+
+function updateActiveNav() {
+    if (Date.now() < anchorLockUntil) return;
+    const id = currentSectionId();
+    if (id) setActiveSection(id);
 }
 
 // Smooth scroll
@@ -239,14 +284,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
-            const navbar = document.getElementById('navbar');
-            const mobileNav = document.getElementById('mobile-icon-nav');
-            const navHeight = (navbar && navbar.offsetHeight > 0) ? navbar.offsetHeight : (mobileNav ? mobileNav.offsetHeight : 60);
-            const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+            const targetPosition = target.getBoundingClientRect().top +
+                window.scrollY - getNavOffset() - ANCHOR_GAP;
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: reduceMotion ? 'auto' : 'smooth'
             });
+
+            // Retour visuel immédiat : le défilement dure environ une demi-
+            // seconde, pendant laquelle l'indicateur resterait en arrière.
+            if (target.matches('section[id]')) {
+                setActiveSection(target.id);
+                anchorLockUntil = Date.now() + (reduceMotion ? 0 : 700);
+            }
         }
     });
 });
