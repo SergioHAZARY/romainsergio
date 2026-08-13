@@ -8,6 +8,10 @@
       "cv/**",
       "img/source/**",
       "img/projects/_raw/**",
+      "img/projects/cdp/**",
+      "img/projects/cdp2/**",
+      "img/projects/cdpnew/**",
+      "2139_neural_portfolio/**",
       "README.md"
     ],
     "cleanUrls": true,
