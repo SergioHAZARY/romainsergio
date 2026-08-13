@@ -1,0 +1,25 @@
+# Firebase
+.firebase/
+firebase-debug.log
+*-debug.log
+
+# Captures brutes des projets (sources non déployées, régénérables)
+img/projects/_raw/
+
+# Dépendances / build (le projet n'en a pas, garde-fou)
+node_modules/
+dist/
+
+# Système
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+
+# Réglages locaux de l'éditeur
+.claude/settings.local.json

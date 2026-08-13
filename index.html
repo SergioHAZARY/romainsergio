@@ -2,851 +2,1074 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romain Sergio - Développeur AI & IT Tech</title>
-    <link rel="shortcut icon" href="img/AI4.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Romain Sergio — Développeur IA Automatisation &amp; IT Tech</title>
+    <meta
+      name="description"
+      content="Romain Sergio, développeur IA, automatisation et IT tech à Antananarivo (Madagascar). 8 ans d'expérience en développement back-end, front-end, e-commerce (Shopify, PrestaShop, WordPress), bases de données et automatisation N8N / Make / Zapier."
+    />
+    <meta name="author" content="Romain Sergio" />
+    <meta name="theme-color" content="#070a0e" />
+    <link rel="canonical" href="https://romainsergio.web.app/" />
+
+    <!-- Aperçu de partage (LinkedIn, WhatsApp, Slack, email) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Romain Sergio — Portfolio" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://romainsergio.web.app/" />
+    <meta property="og:title" content="Romain Sergio — Développeur IA Automatisation &amp; IT Tech" />
+    <meta
+      property="og:description"
+      content="8 ans d'expérience en développement web, e-commerce et automatisation IA. Back-end, front-end, bases de données et intégrations sur mesure."
+    />
+    <meta property="og:image" content="https://romainsergio.web.app/img/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Romain Sergio, développeur IA Automatisation et IT Tech" />
+    <meta property="profile:first_name" content="Romain" />
+    <meta property="profile:last_name" content="Sergio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Romain Sergio — Développeur IA Automatisation &amp; IT Tech" />
+    <meta
+      name="twitter:description"
+      content="8 ans d'expérience en développement web, e-commerce et automatisation IA."
+    />
+    <meta name="twitter:image" content="https://romainsergio.web.app/img/og-cover.jpg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     />
-    <link href="tooplate-neural-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Romain Sergio",
+        "alternateName": "Sergio Hazary",
+        "url": "https://romainsergio.web.app/",
+        "image": "https://romainsergio.web.app/img/romain-sergio.jpg",
+        "jobTitle": "Développeur IA Automatisation & IT Tech",
+        "email": "mailto:sergiohazary@gmail.com",
+        "telephone": "+261377613287",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Antananarivo",
+          "addressCountry": "MG"
+        },
+        "knowsLanguage": ["mg", "fr", "en"],
+        "sameAs": [
+          "https://www.github.com/SergioHazary",
+          "https://www.linkedin.com/in/sergio-hazary-4b981431a"
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Université d'Antananarivo" },
+          { "@type": "EducationalOrganization", "name": "Univers Informatique" }
+        ],
+        "knowsAbout": [
+          "JavaScript", "TypeScript", "Angular", "React", "Node.js", "Python",
+          "PHP", "PL/SQL", "Shopify", "WordPress", "PrestaShop", "Joomla",
+          "MySQL", "PostgreSQL", "Oracle", "Odoo", "N8N", "Zapier", "Make",
+          "Google Apps Script", "Active Directory", "DNS", "DHCP"
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <canvas id="neural-bg"></canvas>
+    <a class="skip-link" href="#main">Aller au contenu principal</a>
 
-    <!-- Mobile Top Icon Nav -->
-    <div class="mobile-icon-nav" id="mobile-icon-nav">
-      <a href="#home" class="nav-icon-item active" data-section="home">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-          <polyline points="9 22 9 12 15 12 15 22" />
-        </svg>
-      </a>
-      <a href="#about" class="nav-icon-item" data-section="about">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 00-3-3.87" />
-          <path d="M16 3.13a4 4 0 010 7.75" />
-        </svg>
-      </a>
-      <a href="#skills" class="nav-icon-item" data-section="skills">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <path d="M12 20V10" /><path d="M18 20V4" /><path d="M6 20v-4" />
-        </svg>
-      </a>
-      <a href="#experience" class="nav-icon-item" data-section="experience">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <rect x="2" y="7" width="20" height="14" rx="2" />
-          <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-          <path d="M12 12v4" /><path d="M2 12h20" />
-        </svg>
-      </a>
-      <a href="#services" class="nav-icon-item" data-section="services">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <rect x="2" y="3" width="20" height="18" rx="2" />
-          <path d="M8 7v10M12 7v10M16 7v10" />
-          <path d="M2 7h20M2 17h20" />
-        </svg>
-      </a>
-      <a href="#projects" class="nav-icon-item" data-section="projects">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
-          <path d="M16.5 2H7.5L2 7.5V22h20V7.5L16.5 2z" />
-          <path d="M9 8l-4 4 4 4" />
-          <path d="M15 8l4 4-4 4" />
-          <path d="M13 6l-2 12" />
-        </svg>
-      </a>
-      <a href="#contact" class="nav-icon-item" data-section="contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-          <path d="M20 8v6M23 11h-6" />
-        </svg>
-      </a>
-    </div>
+    <canvas id="neural-bg" aria-hidden="true"></canvas>
 
-    <nav id="navbar">
-      <div class="nav-container">
-        <!-- Logo -->
-        <a href="#home" class="logo-container">
-          <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2" />
-            <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2" />
-            <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2" />
-            <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2" />
-            <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6" />
-            <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6" />
-            <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
-            <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
-            <circle cx="50" cy="50" r="5" fill="#00ffff" />
-            <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6" />
-            <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6" />
-            <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
-            <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
+    <header>
+      <!-- Rail de navigation vertical (écrans larges) -->
+      <nav class="rail" aria-label="Navigation principale">
+        <div class="rail-inner">
+          <a class="rail-logo" href="#home" aria-label="Romain Sergio — retour à l'accueil">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="20" r="7" fill="none" stroke="#22d3ee" stroke-width="2.5" />
+              <circle cx="24" cy="52" r="7" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity=".7" />
+              <circle cx="76" cy="52" r="7" fill="none" stroke="#c084fc" stroke-width="2.5" opacity=".7" />
+              <circle cx="50" cy="82" r="7" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity=".7" />
+              <circle cx="50" cy="51" r="4.5" fill="#22d3ee" />
+              <g stroke="#22d3ee" stroke-width="1.4" opacity=".45">
+                <line x1="50" y1="27" x2="26" y2="46" />
+                <line x1="50" y1="27" x2="74" y2="46" />
+                <line x1="26" y1="58" x2="50" y2="76" />
+                <line x1="74" y1="58" x2="50" y2="76" />
+                <line x1="50" y1="27" x2="50" y2="46" />
+                <line x1="50" y1="56" x2="50" y2="76" />
+                <line x1="31" y1="52" x2="45" y2="51" />
+                <line x1="55" y1="51" x2="69" y2="52" />
+              </g>
+            </svg>
+          </a>
+
+          <div class="rail-nav">
+            <a class="rail-link" href="#home" data-section="home" data-label="Accueil" aria-label="Accueil" aria-current="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#about" data-section="about" data-label="À propos" aria-label="À propos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.6" />
+                <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#skills" data-section="skills" data-label="Compétences" aria-label="Compétences">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <path d="M6 20v-5M12 20V8M18 20v-9" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#experience" data-section="experience" data-label="Expériences" aria-label="Expériences">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#services" data-section="services" data-label="Services" aria-label="Services">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <rect x="3" y="3" width="7.5" height="7.5" rx="1.6" />
+                <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6" />
+                <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6" />
+                <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#projects" data-section="projects" data-label="Projets" aria-label="Projets">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <path d="m9 8-4 4 4 4M15 8l4 4-4 4M13.5 5l-3 14" />
+              </svg>
+            </a>
+            <a class="rail-link" href="#contact" data-section="contact" data-label="Contact" aria-label="Contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="20" height="20" aria-hidden="true">
+                <rect x="2.5" y="5" width="19" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="rail-social">
+            <a href="https://www.github.com/SergioHazary" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub (nouvel onglet)">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-hazary-4b981431a" target="_blank" rel="noopener noreferrer" aria-label="Mon profil LinkedIn (nouvel onglet)">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Barre de navigation mobile -->
+      <nav class="mobile-nav" aria-label="Navigation principale (mobile)">
+        <a href="#home" data-section="home" aria-label="Accueil" aria-current="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" />
           </svg>
         </a>
-
-        <!-- Nav Icons -->
-        <div class="nav-menu" id="nav-menu">
-          <a href="#home" class="sidebar-icon active" data-section="home" title="Accueil">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
-          </a>
-          <a href="#about" class="sidebar-icon" data-section="about" title="À Propos">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 00-3-3.87" />
-              <path d="M16 3.13a4 4 0 010 7.75" />
-            </svg>
-          </a>
-          <a href="#skills" class="sidebar-icon" data-section="skills" title="Compétences">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <path d="M12 20V10" /><path d="M18 20V4" /><path d="M6 20v-4" />
-            </svg>
-          </a>
-          <a href="#experience" class="sidebar-icon" data-section="experience" title="Expériences">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <rect x="2" y="7" width="20" height="14" rx="2" />
-              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-              <path d="M12 12v4" /><path d="M2 12h20" />
-            </svg>
-          </a>
-          <a href="#services" class="sidebar-icon" data-section="services" title="Services">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <rect x="2" y="3" width="20" height="18" rx="2" />
-              <path d="M8 7v10M12 7v10M16 7v10" />
-              <path d="M2 7h20M2 17h20" />
-            </svg>
-          </a>
-          <a href="#projects" class="sidebar-icon" data-section="projects" title="Projets">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
-              <path d="M16.5 2H7.5L2 7.5V22h20V7.5L16.5 2z" />
-              <path d="M9 8l-4 4 4 4" /><path d="M15 8l4 4-4 4" /><path d="M13 6l-2 12" />
-            </svg>
-          </a>
-          <a href="#contact" class="sidebar-icon" data-section="contact" title="Contact">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-              <path d="M20 8v6M23 11h-6" />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Social links -->
-        <div class="sidebar-social">
-          <a href="https://www.github.com/SergioHazary" target="_blank" rel="noopener" title="GitHub">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/sergio-hazary-4b981431a" target="_blank" rel="noopener" title="LinkedIn">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 class="glitch" data-text="Romain Sergio">Romain Sergio</h1>
-        <p class="subtitle">Développeur AI & IT Tech</p>
-        <p class="hero-description">
-          Solutions web innovantes & automatisation IA
-        </p>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="hero-stat-number">25+</span>
-            <span class="hero-stat-label">Projets</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">25+</span>
-            <span class="hero-stat-label">Clients</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">8+</span>
-            <span class="hero-stat-label">Années</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">20+</span>
-            <span class="hero-stat-label">Technologies</span>
-          </div>
-        </div>
-      </div>
-      <a href="#services" class="scroll-btn">
-        <div class="scroll-btn-inner">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        <a href="#about" data-section="about" aria-label="À propos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.6" />
+            <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
           </svg>
-        </div>
-      </a>
-    </section>
+        </a>
+        <a href="#skills" data-section="skills" aria-label="Compétences">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <path d="M6 20v-5M12 20V8M18 20v-9" />
+          </svg>
+        </a>
+        <a href="#experience" data-section="experience" aria-label="Expériences">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="13" rx="2" />
+            <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18" />
+          </svg>
+        </a>
+        <a href="#services" data-section="services" aria-label="Services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <rect x="3" y="3" width="7.5" height="7.5" rx="1.6" />
+            <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6" />
+            <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6" />
+            <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6" />
+          </svg>
+        </a>
+        <a href="#projects" data-section="projects" aria-label="Projets">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <path d="m9 8-4 4 4 4M15 8l4 4-4 4M13.5 5l-3 14" />
+          </svg>
+        </a>
+        <a href="#contact" data-section="contact" aria-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21" aria-hidden="true">
+            <rect x="2.5" y="5" width="19" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+        </a>
+      </nav>
+    </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="fade-in">
-      <h2 class="section-title">À PROPOS</h2>
-      <div class="about-container">
-        <div class="about-image">
-          <div class="profile-img-wrapper">
-            <div class="profile-img">
-              <img src="img/BOGOSY.png" alt="Romain Sergio" />
-            </div>
-          </div>
-          <div class="experience-badge">
-            <span class="exp-number">8+</span>
-            <span class="exp-text">Ans d'Expérience</span>
-          </div>
-        </div>
-        <div class="about-content">
-          <h3>Développeur AI & IT Tech</h3>
-          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px">
-            Je suis un développeur passionné basé à Antananarivo, Madagascar,
-            spécialisé dans le développement web full-stack et les solutions AI.
-            Avec plus de 8 ans d'expérience dans le domaine IT, je crée des
-            plateformes e-commerce performantes, des interfaces web modernes et
-            des outils d'automatisation IA.
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponible pour de nouvelles missions
           </p>
-          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 30px;">
-            Du back-end au front-end, en passant par le CMS et le webdesign,
-            je maîtrise un large éventail de technologies pour transformer
-            des idées complexes en applications web intuitives et performantes.
+
+          <h1 class="glitch" data-text="Romain Sergio">Romain Sergio</h1>
+          <p class="hero-role">Développeur IA Automatisation &amp; IT Tech</p>
+
+          <p class="hero-pitch">
+            8 ans à construire et fiabiliser des plateformes web : back-end et
+            bases de données, interfaces front-end, e-commerce et workflows
+            automatisés. Basé à Antananarivo, je travaille avec des clients
+            locaux et internationaux.
           </p>
 
-          <div class="about-values">
-            <div class="value-item">
-              <div class="value-icon" style="border-color: var(--primary);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="28" height="28">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                </svg>
-              </div>
-              <div>
-                <h4>Transformation Digitale</h4>
-                <p>Solutions web modernes pour digitaliser votre activité</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon" style="border-color: var(--secondary);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="1.5" width="28" height="28">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
-              <div>
-                <h4>Solutions Sur Mesure</h4>
-                <p>Projets personnalisés adaptés à vos besoins spécifiques</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon" style="border-color: var(--accent);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" width="28" height="28">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                </svg>
-              </div>
-              <div>
-                <h4>Expertise Locale & Internationale</h4>
-                <p>Expérience avec des clients locaux et internationaux</p>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Voir mes projets
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                <path d="M5 12h13M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="/Romain-Sergio-CV.pdf" download>
+              Télécharger mon CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                <path d="M12 3v12M7 11l5 5 5-5M5 21h14" />
+              </svg>
+            </a>
           </div>
 
-          <div class="about-stats">
-            <div class="stat-card">
-              <div class="stat-number">25+</div>
-              <div class="stat-label">Projets</div>
+          <dl class="hero-stats">
+            <div class="hero-stat"><dt class="sr-only">Années d'expérience</dt><dd><b>8+</b><span>Années</span></dd></div>
+            <div class="hero-stat"><dt class="sr-only">Projets livrés</dt><dd><b>25+</b><span>Projets</span></dd></div>
+            <div class="hero-stat"><dt class="sr-only">Clients accompagnés</dt><dd><b>25+</b><span>Clients</span></dd></div>
+            <div class="hero-stat"><dt class="sr-only">Technologies maîtrisées</dt><dd><b>25+</b><span>Technos</span></dd></div>
+          </dl>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Aller à la section À propos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+            <path d="M7 10l5 5 5-5" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ================= À PROPOS ================= -->
+      <section id="about" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">À propos</p>
+          <h2>Un profil hybride : dev, data et IT</h2>
+          <p>Du serveur à l'interface, en passant par le réseau et l'automatisation.</p>
+        </div>
+
+        <div class="about">
+          <div class="about-aside">
+            <figure class="portrait">
+              <img
+                src="img/romain-sergio.jpg"
+                alt="Portrait de Romain Sergio"
+                width="600"
+                height="750"
+                fetchpriority="high"
+              />
+            </figure>
+            <p class="about-badge">
+              <b>8+</b>
+              <span>années d'expérience<br />en développement &amp; IT</span>
+            </p>
+          </div>
+
+          <div class="about-body">
+            <h3>Je transforme des besoins métier en systèmes qui tiennent la charge</h3>
+
+            <p>
+              Mon parcours a commencé côté <strong>infrastructure</strong> — réseau,
+              Active Directory, support technique — avant de basculer vers le
+              <strong>webdesign et le front-end</strong>, puis vers le
+              <strong>back-end et les bases de données</strong>. Cette trajectoire
+              complète change la façon dont j'aborde un projet : je vois autant la
+              requête SQL qui ralentit une page que le détail d'interface qui fait
+              abandonner un tunnel d'achat.
+            </p>
+
+            <p>
+              Aujourd'hui je travaille principalement sur l'<strong>administration
+              et l'optimisation de bases de données</strong>, la conception de
+              requêtes avancées, et la mise en place de
+              <strong>workflows automatisés</strong> avec N8N, Make, Zapier et
+              Google Apps Script — pour supprimer les tâches répétitives plutôt
+              que de les documenter.
+            </p>
+
+            <div class="values">
+              <div class="value">
+                <span class="value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21">
+                    <path d="M13 2 4.5 13.5H11l-1 8.5 9.5-12H13z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4>Performance mesurable</h4>
+                  <p>Optimisation des requêtes, des temps de réponse et des parcours utilisateur.</p>
+                </div>
+              </div>
+              <div class="value">
+                <span class="value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21">
+                    <path d="M12 21s7.5-4 7.5-9.5V5L12 2.5 4.5 5v6.5C4.5 17 12 21 12 21z" />
+                    <path d="m9 11.5 2.2 2.2L15.5 9.5" />
+                  </svg>
+                </span>
+                <div>
+                  <h4>Fiabilité et maintenance</h4>
+                  <p>Mises à jour régulières, sécurité des données, documentation transmissible.</p>
+                </div>
+              </div>
+              <div class="value">
+                <span class="value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="21" height="21">
+                    <circle cx="12" cy="12" r="9.5" />
+                    <path d="M2.5 12h19M12 2.5a15 15 0 0 1 4 9.5 15 15 0 0 1-4 9.5 15 15 0 0 1-4-9.5 15 15 0 0 1 4-9.5z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4>Travail à distance rodé</h4>
+                  <p>Missions hybrides et sur site, avec des équipes à Madagascar et en Europe.</p>
+                </div>
+              </div>
             </div>
-            <div class="stat-card">
-              <div class="stat-number">8+</div>
-              <div class="stat-label">Ans Exp</div>
+
+            <div class="languages">
+              <h4>Langues</h4>
+              <p class="lang">
+                <span class="lang-name">Malagasy</span>
+                <span class="meter" aria-hidden="true"><i data-level="100"></i></span>
+                <span class="lang-level">Langue maternelle</span>
+              </p>
+              <p class="lang">
+                <span class="lang-name">Français</span>
+                <span class="meter" aria-hidden="true"><i data-level="90"></i></span>
+                <span class="lang-level">Courant</span>
+              </p>
+              <p class="lang">
+                <span class="lang-name">Anglais</span>
+                <span class="meter" aria-hidden="true"><i data-level="70"></i></span>
+                <span class="lang-level">Professionnel</span>
+              </p>
             </div>
-            <div class="stat-card">
-              <div class="stat-number">25+</div>
-              <div class="stat-label">Clients</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPÉTENCES ================= -->
+      <section id="skills" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Compétences</p>
+          <h2>Ce que je maîtrise, et à quel niveau</h2>
+          <p>Les niveaux ci-dessous reflètent mon usage réel en production, pas une auto-évaluation flatteuse.</p>
+        </div>
+
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Back-End &amp; bases de données</span>
+              <span class="skill-bar-value">95 %</span>
             </div>
+            <div class="meter"><i data-level="95"></i></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Front-End (JavaScript, TypeScript, React, Angular)</span>
+              <span class="skill-bar-value">90 %</span>
+            </div>
+            <div class="meter"><i data-level="90"></i></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">E-Commerce &amp; CMS (Shopify, WordPress, PrestaShop)</span>
+              <span class="skill-bar-value">90 %</span>
+            </div>
+            <div class="meter"><i data-level="90"></i></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Automatisation &amp; IA (N8N, Make, Zapier, Apps Script)</span>
+              <span class="skill-bar-value">85 %</span>
+            </div>
+            <div class="meter"><i data-level="85"></i></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Réseau &amp; administration système</span>
+              <span class="skill-bar-value">80 %</span>
+            </div>
+            <div class="meter"><i data-level="80"></i></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Design &amp; maquettage (Figma, Photoshop, Illustrator)</span>
+              <span class="skill-bar-value">80 %</span>
+            </div>
+            <div class="meter"><i data-level="80"></i></div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="fade-in">
-      <h2 class="section-title">COMPÉTENCES</h2>
-      <p class="section-subtitle">Mes compétences techniques et leur niveau de maîtrise</p>
+        <h3 class="subhead">Stack détaillée</h3>
 
-      <div class="skills-bars-container">
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Front-End (JS, TS, React, Angular)</span>
-            <span class="skill-bar-percent">95%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="95" style="--bar-color: var(--primary);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Back-End (Node.JS, Python, Flask, PHP)</span>
-            <span class="skill-bar-percent">90%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="90" style="--bar-color: var(--secondary);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">CMS & E-Commerce (Shopify, WordPress, PrestaShop)</span>
-            <span class="skill-bar-percent">90%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="90" style="--bar-color: var(--accent);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Base de données (MySQL, PostgreSQL, Oracle)</span>
-            <span class="skill-bar-percent">85%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="85" style="--bar-color: var(--primary);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Automatisation & AI (N8N, Zapier, Make)</span>
-            <span class="skill-bar-percent">85%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="85" style="--bar-color: var(--secondary);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Design (Photoshop, Illustrator, Figma, Canva)</span>
-            <span class="skill-bar-percent">80%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="80" style="--bar-color: var(--accent);"></div>
-          </div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span class="skill-bar-name">Réseau (Active Directory, DNS, VPN, DHCP)</span>
-            <span class="skill-bar-percent">80%</span>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="80" style="--bar-color: var(--primary);"></div>
-          </div>
-        </div>
-      </div>
+        <div class="skill-groups">
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <rect x="2.5" y="4" width="19" height="14" rx="2" /><path d="M9 21h6M12 18v3" />
+              </svg>
+              Front-End
+            </h3>
+            <ul><li>JavaScript</li><li>TypeScript</li><li>Angular</li><li>React</li><li>HTML5</li><li>CSS3</li></ul>
+          </article>
 
-      <div class="skills-tags">
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Angular</span>
-        <span class="skill-tag">Node.JS</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">PHP</span>
-        <span class="skill-tag">Shopify</span>
-        <span class="skill-tag">WordPress</span>
-        <span class="skill-tag">Joomla</span>
-        <span class="skill-tag">PrestaShop</span>
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">PostgreSQL</span>
-        <span class="skill-tag">Oracle</span>
-        <span class="skill-tag">Odoo</span>
-        <span class="skill-tag">Photoshop</span>
-        <span class="skill-tag">Illustrator</span>
-        <span class="skill-tag">Figma</span>
-        <span class="skill-tag">Canva</span>
-        <span class="skill-tag">Apps Script</span>
-        <span class="skill-tag">N8N</span>
-        <span class="skill-tag">Zapier</span>
-        <span class="skill-tag">Make</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Postman</span>
-        <span class="skill-tag">VS Code</span>
-      </div>
-    </section>
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <rect x="2.5" y="3" width="19" height="7" rx="1.8" /><rect x="2.5" y="14" width="19" height="7" rx="1.8" />
+              </svg>
+              Back-End
+            </h3>
+            <ul><li>Node.js</li><li>Python</li><li>PHP</li><li>PL/SQL</li></ul>
+          </article>
 
-    <!-- EXPERIENCES -->
-    <section id="experience" class="fade-in">
-      <h2 class="section-title">EXPÉRIENCES</h2>
-      <p class="section-subtitle">Mon parcours professionnel</p>
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <ellipse cx="12" cy="5.5" rx="8" ry="3" /><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M20 12c0 1.7-3.6 3-8 3s-8-1.3-8-3" />
+              </svg>
+              Bases de données
+            </h3>
+            <ul><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>Odoo</li></ul>
+          </article>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Mai 2024 — 2026</div>
-          <div class="timeline-card glass-card">
-            <h3>Développeur Back-End</h3>
-            <h4>REGARD SERVICE INC <span class="work-mode">Hybride</span></h4>
-            <ul>
-              <li>Développement et déploiement de plateforme e-commerce</li>
-              <li>Optimisation de la performance des bases de données</li>
-              <li>Configuration des requêtes SQL pour les fonctionnalités</li>
-              <li>Assurer la mise à jour régulière de base de données</li>
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <circle cx="9" cy="20" r="1.4" /><circle cx="18" cy="20" r="1.4" /><path d="M2 3h3l2.4 11.5h11L21 6.5H6.2" />
+              </svg>
+              CMS &amp; E-Commerce
+            </h3>
+            <ul><li>Shopify</li><li>WordPress</li><li>PrestaShop</li><li>Joomla</li></ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <circle cx="12" cy="12" r="3" /><path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19" />
+              </svg>
+              Automatisation
+            </h3>
+            <ul><li>N8N</li><li>Make</li><li>Zapier</li><li>Apps Script</li></ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <path d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zM2.5 12h19" /><path d="M12 2.5c2.5 2.6 3.8 5.9 3.8 9.5S14.5 18.9 12 21.5c-2.5-2.6-3.8-5.9-3.8-9.5S9.5 5.1 12 2.5z" />
+              </svg>
+              Réseau
+            </h3>
+            <ul><li>Active Directory</li><li>DNS</li><li>DHCP</li><li>LAN / WLAN</li><li>VPN</li></ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <path d="M12 2.5a9.5 9.5 0 0 0 0 19c1.4 0 2-.9 2-1.9 0-1.6-1.4-1.9-1.4-3 0-.9.7-1.6 1.7-1.6h1.4c2.7 0 4.8-2.1 4.8-5.2 0-4-3.7-7.3-8.5-7.3z" /><circle cx="8" cy="10" r="1.2" fill="currentColor" stroke="none" /><circle cx="12" cy="7.5" r="1.2" fill="currentColor" stroke="none" />
+              </svg>
+              Design
+            </h3>
+            <ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Canva</li></ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true">
+                <path d="M14.7 6.3a4.5 4.5 0 0 1 6 6l-8.4 8.4a2.5 2.5 0 0 1-3.6-3.6l7-7" /><path d="M3 3l4 4" />
+              </svg>
+              Outils
+            </h3>
+            <ul><li>Git &amp; GitHub</li><li>VS Code</li><li>Postman</li><li>Microsoft Office</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= EXPÉRIENCES ================= -->
+      <section id="experience" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Parcours</p>
+          <h2>Expériences professionnelles</h2>
+          <p>Huit ans de progression continue, du support IT au développement back-end.</p>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <p class="job-date">Mai 2024 — 2026</p>
+            <h3 class="job-title">Développeur Back-End</h3>
+            <p class="job-company">Regard Service Inc <span class="tag-soft">Hybride</span></p>
+            <ul class="job-tasks">
+              <li>Administration des bases de données de production</li>
+              <li>Optimisation des performances des systèmes de données</li>
+              <li>Conception et optimisation de requêtes avancées</li>
+              <li>Maintenance régulière et sécurisation de la base de données</li>
             </ul>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Avril 2021 — Mai 2024</div>
-          <div class="timeline-card glass-card">
-            <h3>Développeur Front-End</h3>
-            <h4>AD VALOREM <span class="work-mode">Sur site</span></h4>
-            <ul>
-              <li>Création et maintenance de plateformes web et d'applications</li>
+          <li>
+            <p class="job-date">Avril 2021 — Mai 2024</p>
+            <h3 class="job-title">Développeur Front-End</h3>
+            <p class="job-company">Ad Valorem <span class="tag-soft">Sur site</span></p>
+            <ul class="job-tasks">
+              <li>Création et maintenance de la plateforme web et de l'application</li>
               <li>Implantation de nouveau code pour l'optimisation</li>
               <li>Implémentation d'interfaces plus performantes</li>
-              <li>Création d'outils IT intégrés dans la gestion des projets</li>
+              <li>Création d'outils IT intégrés à la gestion des projets</li>
             </ul>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Juin 2019 — Décembre 2021</div>
-          <div class="timeline-card glass-card">
-            <h3>Webmaster</h3>
-            <h4>SHAKTI OUTSOURCING <span class="work-mode">Sur site</span></h4>
-            <ul>
+          <li>
+            <p class="job-date">Juin 2019 — Mars 2021</p>
+            <h3 class="job-title">Webmaster</h3>
+            <p class="job-company">Shakti Outsourcing <span class="tag-soft">Sur site</span></p>
+            <ul class="job-tasks">
               <li>Optimisation des fonctionnalités de la plateforme e-commerce</li>
-              <li>Expertise en webdesign et en conception de maquette</li>
-              <li>Adaptation aux normes pour le référencement SEO</li>
-              <li>Création de scripts pour scraper et collecter des données</li>
+              <li>Webdesign et conception de maquettes</li>
+              <li>Mise aux normes pour le référencement SEO</li>
+              <li>Création de scripts de scraping et de collecte de données</li>
             </ul>
-          </div>
-        </div>
+          </li>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Mars 2018 — Juin 2019</div>
-          <div class="timeline-card glass-card">
-            <h3>IT Technicien</h3>
-            <h4>KINGA SHOP <span class="work-mode">Sur site</span></h4>
-            <ul>
+          <li>
+            <p class="job-date">Mars 2018 — Juin 2019</p>
+            <h3 class="job-title">Technicien IT</h3>
+            <p class="job-company">Kinga Shop <span class="tag-soft">Sur site</span></p>
+            <ul class="job-tasks">
               <li>Installation et configuration des équipements informatiques</li>
-              <li>Maintenance des matériels et mise à jour des logiciels</li>
-              <li>Gestion de réseau (VPN) pour une connexion sécurisée</li>
-              <li>Support IT pour résoudre les problèmes techniques</li>
+              <li>Maintenance du matériel et mise à jour des logiciels</li>
+              <li>Gestion du réseau (VPN) pour une connexion sécurisée</li>
+              <li>Support IT et résolution des incidents techniques</li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ol>
 
-      <!-- Education -->
-      <h3 style="color: var(--primary); text-align: center; margin: 60px 0 30px; font-family: 'Orbitron', sans-serif; font-size: 1.3rem; letter-spacing: 2px;">
-        FORMATION
-      </h3>
-      <div class="education-grid">
-        <div class="glass-card education-card">
-          <div class="edu-date">Septembre 2017 — Juin 2021</div>
-          <h3>Licence en Informatique et Technologie</h3>
-          <h4>Université d'Antananarivo</h4>
-        </div>
-        <div class="glass-card education-card">
-          <div class="edu-date">Novembre 2020 — Décembre 2021</div>
-          <h3>Certificat en Développement Web et IT</h3>
-          <h4>Univers Informatique</h4>
-        </div>
-      </div>
-    </section>
+        <h3 class="subhead">Formation</h3>
 
-    <!-- SERVICES -->
-    <section id="services" class="fade-in">
-      <h2 class="section-title">SERVICES</h2>
-      <p class="section-subtitle">Des solutions digitales complètes pour vos besoins</p>
-      <div class="services-grid">
+        <div class="education">
+          <article class="card">
+            <p class="job-date">Septembre 2017 — Juin 2021</p>
+            <h3>Licence en Informatique et Technologie</h3>
+            <p>Université d'Antananarivo</p>
+          </article>
+          <article class="card">
+            <p class="job-date">Novembre 2020 — Décembre 2021</p>
+            <h3>Certificat en Développement Web et IT</h3>
+            <p>Univers Informatique</p>
+          </article>
+        </div>
+      </section>
 
-        <div class="service-card glass-card" id="service-frontend">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="48" height="48">
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <path d="M8 21h8M12 17v4" />
-              <path d="M7 8l3 3-3 3M12 14h4" />
-            </svg>
-          </div>
-          <h3>Développement Front-End</h3>
-          <p>Création d'interfaces web modernes et réactives avec JavaScript, TypeScript, React et Angular. Design responsive et expériences utilisateur optimisées.</p>
-          <div class="service-tags">
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Angular</span>
-          </div>
+      <!-- ================= SERVICES ================= -->
+      <section id="services" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>Comment je peux intervenir</h2>
+          <p>Au forfait sur un projet précis, ou en régie sur la durée.</p>
         </div>
 
-        <div class="service-card glass-card" id="service-backend">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="1.5" width="48" height="48">
-              <rect x="2" y="2" width="20" height="8" rx="2" />
-              <rect x="2" y="14" width="20" height="8" rx="2" />
-              <circle cx="6" cy="6" r="1" fill="var(--secondary)" />
-              <circle cx="6" cy="18" r="1" fill="var(--secondary)" />
-              <path d="M10 6h6M10 18h6" />
-            </svg>
-          </div>
-          <h3>Développement Back-End</h3>
-          <p>Développement et déploiement de plateformes robustes avec Node.JS, Python, Flask et PHP. Optimisation de la performance et configuration de requêtes SQL.</p>
-          <div class="service-tags">
-            <span>Node.JS</span>
-            <span>Python</span>
-            <span>Flask</span>
-            <span>PHP</span>
-          </div>
-        </div>
-
-        <div class="service-card glass-card" id="service-ecommerce">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" width="48" height="48">
-              <circle cx="9" cy="21" r="1" />
-              <circle cx="20" cy="21" r="1" />
-              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
-            </svg>
-          </div>
-          <h3>E-Commerce & CMS</h3>
-          <p>Optimisation et gestion de plateformes e-commerce avec Shopify, WordPress, PrestaShop et Joomla. Référencement SEO et webdesign professionnel.</p>
-          <div class="service-tags">
-            <span>Shopify</span>
-            <span>WordPress</span>
-            <span>PrestaShop</span>
-            <span>Joomla</span>
-          </div>
-        </div>
-
-        <div class="service-card glass-card" id="service-automation">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="48" height="48">
-              <circle cx="12" cy="12" r="3" />
-              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
-            </svg>
-          </div>
-          <h3>Automatisation & AI</h3>
-          <p>Mise en place de workflows automatisés et solutions d'intelligence artificielle avec Apps Script, N8N, Zapier et Make pour optimiser vos processus.</p>
-          <div class="service-tags">
-            <span>Apps Script</span>
-            <span>N8N</span>
-            <span>Zapier</span>
-            <span>Make</span>
-          </div>
-        </div>
-
-        <div class="service-card glass-card" id="service-data">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="1.5" width="48" height="48">
-              <ellipse cx="12" cy="5" rx="9" ry="3" />
-              <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3" />
-              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
-            </svg>
-          </div>
-          <h3>Data & Base de données</h3>
-          <p>Gestion et optimisation de bases de données avec MySQL, PostgreSQL, Oracle et Odoo. Scraping de données, collecte et traitement pour vos projets.</p>
-          <div class="service-tags">
-            <span>MySQL</span>
-            <span>PostgreSQL</span>
-            <span>Oracle</span>
-            <span>Odoo</span>
-          </div>
-        </div>
-
-        <div class="service-card glass-card" id="service-backoffice">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" width="48" height="48">
-              <rect x="2" y="3" width="20" height="18" rx="2" />
-              <path d="M8 7h8M8 11h8M8 15h5" />
-              <path d="M16 15l2 2 4-4" />
-            </svg>
-          </div>
-          <h3>Gestion Back Office</h3>
-          <p>Délégation de vos opérations secondaires et chronophages : gestion administrative, saisie de données, e-commerce, réseaux sociaux et création de contenu. Assistants virtuels qualifiés pour booster votre productivité.</p>
-          <div class="service-tags">
-            <span>Administration</span>
-            <span>E-commerce</span>
-            <span>Saisie de données</span>
-            <span>Création de contenu</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="fade-in">
-      <h2 class="section-title">PROJETS</h2>
-      <p class="section-subtitle">Découvrez mes réalisations récentes</p>
-
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
-        <button class="filter-btn" data-filter="vitrine">Vitrine</button>
-        <button class="filter-btn" data-filter="ai">AI</button>
-      </div>
-
-      <div class="projects-grid">
-        <!-- E-commerce projects -->
-        <a href="https://www.roseinc.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--primary)">Rose Inc</h3>
-          <p style="color: var(--text-secondary)">Plateforme e-commerce de produits cosmétiques haut de gamme</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://mademoisellesaintgermain.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--secondary)">Mademoiselle Saint Germain</h3>
-          <p style="color: var(--text-secondary)">Boutique en ligne de mode et accessoires élégants</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://savaipskin.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--accent)">Savaip Skin</h3>
-          <p style="color: var(--text-secondary)">E-commerce de soins de la peau et produits de beauté</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://fr.bazarchic.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--primary)">Bazarchic</h3>
-          <p style="color: var(--text-secondary)">Ventes privées de grandes marques de mode et déco</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://www.smallable.com/fr" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--secondary)">Smallable</h3>
-          <p style="color: var(--text-secondary)">Concept store en ligne pour toute la famille</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://nabillabeauty.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--accent)">Nabilla Beauty</h3>
-          <p style="color: var(--text-secondary)">Marque de beauté et cosmétiques en ligne</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://www.fingerinthenose.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--primary)">Finger in the Nose</h3>
-          <p style="color: var(--text-secondary)">Mode enfant tendance et décalée</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://seasonly.fr/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--secondary)">Seasonly</h3>
-          <p style="color: var(--text-secondary)">Soins personnalisés et cosmétiques naturels</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://wethenew.com/" target="_blank" rel="noopener" class="glass-card project-card" data-category="ecommerce">
-          <div class="project-category-badge">E-Commerce</div>
-          <h3 style="color: var(--accent)">Wethenew</h3>
-          <p style="color: var(--text-secondary)">Marketplace de sneakers neuves et authentifiées</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <!-- Vitrine projects -->
-        <a href="https://afro-afro.web.app/" target="_blank" rel="noopener" class="glass-card project-card" data-category="vitrine">
-          <div class="project-category-badge" style="background: var(--secondary);">Vitrine</div>
-          <h3 style="color: var(--primary)">Afro Afro</h3>
-          <p style="color: var(--text-secondary)">Site vitrine avec un design moderne et immersif</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://hh-technologie.vercel.app/" target="_blank" rel="noopener" class="glass-card project-card" data-category="vitrine">
-          <div class="project-category-badge" style="background: var(--secondary);">Vitrine</div>
-          <h3 style="color: var(--secondary)">HH Technologie</h3>
-          <p style="color: var(--text-secondary)">Site vitrine pour entreprise technologique</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <!-- AI projects -->
-        <a href="https://job-connect-pro-47f686c7.base44.app" target="_blank" rel="noopener" class="glass-card project-card" data-category="ai">
-          <div class="project-category-badge" style="background: var(--accent); color: #000;">AI</div>
-          <h3 style="color: var(--primary)">Job Connect Pro</h3>
-          <p style="color: var(--text-secondary)">Plateforme de mise en relation professionnelle propulsée par l'IA</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://coachee-growth-path.base44.app" target="_blank" rel="noopener" class="glass-card project-card" data-category="ai">
-          <div class="project-category-badge" style="background: var(--accent); color: #000;">AI</div>
-          <h3 style="color: var(--secondary)">Coachee Growth Path</h3>
-          <p style="color: var(--text-secondary)">Application de coaching et développement personnel assisté par IA</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-
-        <a href="https://math-aventure-ba06887e.base44.app" target="_blank" rel="noopener" class="glass-card project-card" data-category="ai">
-          <div class="project-category-badge" style="background: var(--accent); color: #000;">AI</div>
-          <h3 style="color: var(--accent)">Math Aventure</h3>
-          <p style="color: var(--text-secondary)">Plateforme éducative de mathématiques gamifiée avec IA</p>
-          <span class="project-link-icon">&#8599;</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="fade-in">
-      <h2 class="section-title">CONTACT</h2>
-      <p class="section-subtitle">Contactez-moi pour discuter de votre projet</p>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="24" height="24">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                <circle cx="12" cy="10" r="3" />
+        <div class="services">
+          <article class="card" id="service-backend">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <rect x="2.5" y="3" width="19" height="7" rx="1.8" /><rect x="2.5" y="14" width="19" height="7" rx="1.8" />
+                <path d="M6 6.5h.01M6 17.5h.01M10 6.5h7M10 17.5h7" />
               </svg>
-            </div>
-            <div>
-              <h4>Adresse</h4>
-              <p>Antananarivo, Madagascar</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="24" height="24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <path d="M22 6l-10 7L2 6" />
-              </svg>
-            </div>
-            <div>
-              <h4>Email</h4>
-              <p>sergiohazary@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="24" height="24">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-              </svg>
-            </div>
-            <div>
-              <h4>Téléphone</h4>
-              <p>+261 37 76 132 87</p>
-            </div>
-          </div>
+            </span>
+            <h3>Développement Back-End</h3>
+            <p>
+              Conception d'API et de logique serveur avec Node.js, Python et PHP.
+              Modélisation de données, requêtes SQL et PL/SQL optimisées,
+              déploiement et suivi en production.
+            </p>
+            <div class="chips"><span>Node.js</span><span>Python</span><span>PHP</span><span>PL/SQL</span></div>
+          </article>
 
-          <div class="social-links" style="margin-top: 30px; justify-content: center;">
-            <a href="https://www.github.com/SergioHazary" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+          <article class="card" id="service-data">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <ellipse cx="12" cy="5.5" rx="8" ry="3" /><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M20 12c0 1.7-3.6 3-8 3s-8-1.3-8-3" />
               </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/sergio-hazary-4b981431a" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </span>
+            <h3>Bases de données &amp; Data</h3>
+            <p>
+              Audit et optimisation de bases existantes (MySQL, PostgreSQL, Oracle,
+              Odoo) : index, requêtes lentes, intégrité, sauvegardes. Scraping et
+              consolidation de données pour vos tableaux de bord.
+            </p>
+            <div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>Oracle</span><span>Odoo</span></div>
+          </article>
+
+          <article class="card" id="service-automation">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19" />
               </svg>
-            </a>
-            <a href="mailto:sergiohazary@gmail.com" aria-label="Email">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </span>
+            <h3>Automatisation &amp; IA</h3>
+            <p>
+              Suppression des tâches répétitives : synchronisations entre outils,
+              relances automatiques, rapports générés seuls. Workflows N8N, Make,
+              Zapier et Google Apps Script, avec briques IA quand elles apportent
+              un gain réel.
+            </p>
+            <div class="chips"><span>N8N</span><span>Make</span><span>Zapier</span><span>Apps Script</span></div>
+          </article>
+
+          <article class="card" id="service-frontend">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <rect x="2.5" y="4" width="19" height="14" rx="2" /><path d="M9 21h6M12 18v3M7.5 9l2 2-2 2M12.5 13h4" />
               </svg>
-            </a>
-          </div>
+            </span>
+            <h3>Développement Front-End</h3>
+            <p>
+              Interfaces responsive en JavaScript, TypeScript, React et Angular.
+              Accessibilité, performance de chargement et compatibilité mobile
+              traitées dès la conception, pas après coup.
+            </p>
+            <div class="chips"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Angular</span></div>
+          </article>
+
+          <article class="card" id="service-ecommerce">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <circle cx="9" cy="20" r="1.4" /><circle cx="18" cy="20" r="1.4" /><path d="M2 3h3l2.4 11.5h11L21 6.5H6.2" />
+              </svg>
+            </span>
+            <h3>E-Commerce &amp; CMS</h3>
+            <p>
+              Mise en place, personnalisation et optimisation de boutiques Shopify,
+              PrestaShop, WordPress et Joomla. Travail sur les fiches produits, le
+              tunnel de conversion et le référencement SEO technique.
+            </p>
+            <div class="chips"><span>Shopify</span><span>PrestaShop</span><span>WordPress</span><span>SEO</span></div>
+          </article>
+
+          <article class="card" id="service-it">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+                <rect x="2.5" y="4" width="19" height="12" rx="2" /><path d="M8 20h8M12 16v4" />
+                <path d="M6 8h4M6 11h6" />
+              </svg>
+            </span>
+            <h3>Support &amp; Infrastructure IT</h3>
+            <p>
+              Installation et configuration de postes et d'équipements réseau,
+              Active Directory, DNS, DHCP, VPN. Maintenance préventive et support
+              aux utilisateurs — l'origine de mon parcours.
+            </p>
+            <div class="chips"><span>Active Directory</span><span>DNS / DHCP</span><span>VPN</span><span>LAN / WLAN</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= PROJETS ================= -->
+      <!--
+        Contexte des projets
+        --------------------
+        Chaque carte porte une ligne « .project-context » qui indique la nature
+        de l'intervention. Pour renforcer encore la crédibilité auprès d'un
+        recruteur, remplacez le libellé générique par le donneur d'ordre réel,
+        par exemple : « Mission via Ad Valorem » ou « Mission via Shakti
+        Outsourcing ». Ne laissez jamais un contexte inexact : c'est la première
+        chose qu'un recruteur vérifie.
+      -->
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Réalisations</p>
+          <h2>Projets</h2>
+          <p>Plateformes e-commerce, sites vitrines et applications assistées par IA.</p>
         </div>
 
-        <form class="contact-form glass-card">
-          <div class="form-group">
-            <input type="text" placeholder="Votre Nom" required />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Votre Email" required />
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Sujet" required />
-          </div>
-          <div class="form-group">
-            <select required>
-              <option value="" disabled selected>Choisir un service</option>
-              <option value="frontend">Développement Front-End</option>
-              <option value="backend">Développement Back-End</option>
-              <option value="ecommerce">E-Commerce & CMS</option>
-              <option value="automation">Automatisation & AI</option>
-              <option value="data">Data & Base de données</option>
-              <option value="other">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea rows="5" placeholder="Votre Message" required></textarea>
-          </div>
-          <button type="submit" class="neural-btn">ENVOYER LE MESSAGE</button>
-        </form>
-      </div>
-    </section>
+        <div class="filters" role="group" aria-label="Filtrer les projets par catégorie">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" class="filter" data-filter="ecommerce" aria-pressed="false">E-Commerce</button>
+          <button type="button" class="filter" data-filter="vitrine" aria-pressed="false">Vitrine</button>
+          <button type="button" class="filter" data-filter="ia" aria-pressed="false">IA</button>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Navigation</h3>
+        <p id="projects-count" class="sr-only" role="status" aria-live="polite">14 projets affichés</p>
+
+        <div class="projects">
+          <a class="card project" data-category="ecommerce" href="https://www.roseinc.com/" target="_blank" rel="noopener noreferrer" aria-label="Rose Inc — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/roseinc.webp" alt="Aperçu de la page d'accueil du site Rose Inc" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Rose Inc<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Plateforme e-commerce de cosmétiques haut de gamme : catalogue, fiches produits et tunnel d'achat.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://fr.bazarchic.com/" target="_blank" rel="noopener noreferrer" aria-label="Bazarchic — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/bazarchic.webp" alt="Aperçu de la page d'accueil du site Bazarchic" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Bazarchic<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Site de ventes privées multi-marques (mode, déco, beauté) avec catalogue à forte rotation.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://www.smallable.com/fr" target="_blank" rel="noopener noreferrer" aria-label="Smallable — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/smallable.webp" alt="Aperçu de la page d'accueil du site Smallable" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Smallable<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Concept store en ligne famille : large catalogue, navigation par univers et filtres avancés.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://wethenew.com/" target="_blank" rel="noopener noreferrer" aria-label="Wethenew — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/wethenew.webp" alt="Aperçu de la page d'accueil du site Wethenew" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Wethenew<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Marketplace de sneakers authentifiées : gestion des stocks vendeurs et pages produits dynamiques.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://nabillabeauty.com/" target="_blank" rel="noopener noreferrer" aria-label="Nabilla Beauty — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/nabillabeauty.webp" alt="Aperçu de la page d'accueil du site Nabilla Beauty" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Nabilla Beauty<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Boutique de cosmétiques d'une marque à forte audience : pics de trafic sur les lancements produits.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://www.fingerinthenose.com/" target="_blank" rel="noopener noreferrer" aria-label="Finger in the Nose — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/fingerinthenose.webp" alt="Aperçu de la page d'accueil du site Finger in the Nose" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Finger in the Nose<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Marque de mode enfant : catalogue saisonnier, déclinaisons de tailles et coloris.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://mademoisellesaintgermain.com/" target="_blank" rel="noopener noreferrer" aria-label="Mademoiselle Saint Germain — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/msaintgermain.webp" alt="Aperçu de la page de lancement du site Mademoiselle Saint Germain" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Mademoiselle Saint Germain<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Marque de cosmétiques : page de lancement et collecte d'inscriptions, en attente de l'ouverture de la boutique.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://seasonly.fr/" target="_blank" rel="noopener noreferrer" aria-label="Seasonly — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/seasonly.webp" alt="Aperçu de la page d'accueil du site Seasonly" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Seasonly<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Soins naturels personnalisés : diagnostic de peau en ligne relié aux recommandations produits.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ecommerce" href="https://savaipskin.com/" target="_blank" rel="noopener noreferrer" aria-label="Savaip Skin — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/savaipskin.webp" alt="Aperçu de la page d'accueil du site Savaip Skin" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3>Savaip Skin<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>E-commerce de soins de la peau : gamme réduite, pages produits pédagogiques et paiement simplifié.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Mission client · Intégration &amp; optimisation</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="vitrine" href="https://afro-afro.web.app/" target="_blank" rel="noopener noreferrer" aria-label="Afro Afro — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/afroafro.webp" alt="Aperçu de la page d'accueil du site Afro Afro" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">Vitrine</span>
+            </div>
+            <div class="project-body">
+              <h3>Afro Afro<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Site vitrine immersif : animations maîtrisées, structure responsive et hébergement Firebase.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Conception &amp; développement complets</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="vitrine" href="https://hh-technologie.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="HH Technologie — ouvrir le site dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/hhtechnologie.webp" alt="Aperçu de la page d'accueil du site HH Technologie" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag">Vitrine</span>
+            </div>
+            <div class="project-body">
+              <h3>HH Technologie<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Vitrine d'une société de services technologiques : présentation de l'offre et formulaire de contact.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Conception &amp; développement complets</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ia" href="https://job-connect-pro-47f686c7.base44.app" target="_blank" rel="noopener noreferrer" aria-label="Job Connect Pro — ouvrir l'application dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/jobconnect.webp" alt="Aperçu de l'application Job Connect Pro" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag" data-kind="ia">IA</span>
+            </div>
+            <div class="project-body">
+              <h3>Job Connect Pro<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Mise en relation candidats / recruteurs avec appariement assisté par IA sur les profils et les offres.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Projet personnel · Prototype fonctionnel</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ia" href="https://coachee-growth-path.base44.app" target="_blank" rel="noopener noreferrer" aria-label="Coachee Growth Path — ouvrir l'application dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/coachee.webp" alt="Aperçu de l'application Coachee Growth Path" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag" data-kind="ia">IA</span>
+            </div>
+            <div class="project-body">
+              <h3>Coachee Growth Path<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Suivi de coaching et de développement personnel : objectifs, progression et recommandations générées.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Projet personnel · Prototype fonctionnel</p>
+            </div>
+          </a>
+
+          <a class="card project" data-category="ia" href="https://math-aventure-ba06887e.base44.app" target="_blank" rel="noopener noreferrer" aria-label="Math Aventure — ouvrir l'application dans un nouvel onglet">
+            <div class="project-shot">
+              <img src="img/projects/mathaventure.webp" alt="Aperçu de l'application Math Aventure" width="800" height="500" loading="lazy" decoding="async" />
+              <span class="project-tag" data-kind="ia">IA</span>
+            </div>
+            <div class="project-body">
+              <h3>Math Aventure<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" /></svg></span></h3>
+              <p>Plateforme éducative de mathématiques gamifiée : exercices adaptatifs et progression par niveaux.</p>
+              <p class="project-context"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5" /></svg>Projet personnel · Prototype fonctionnel</p>
+            </div>
+          </a>
+        </div>
+
+        <p class="projects-note">
+          Les projets e-commerce ci-dessus ont été réalisés dans le cadre de
+          missions client, en agence ou en sous-traitance ; les marques citées
+          restent la propriété de leurs détenteurs respectifs. Détail de ma
+          contribution et références disponibles sur demande.
+        </p>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Parlons de votre projet</h2>
+          <p>Décrivez votre besoin en quelques lignes : je réponds sous 24 à 48 heures ouvrées.</p>
+        </div>
+
+        <div class="contact">
+          <div>
+            <dl class="contact-list">
+              <div class="contact-row">
+                <dt>
+                  <span class="value-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="19" height="19">
+                      <path d="M20.5 10.5c0 6.5-8.5 11.5-8.5 11.5S3.5 17 3.5 10.5a8.5 8.5 0 0 1 17 0z" /><circle cx="12" cy="10.5" r="2.8" />
+                    </svg>
+                  </span>
+                  Localisation
+                </dt>
+                <dd>Antananarivo, Madagascar</dd>
+              </div>
+
+              <div class="contact-row">
+                <dt>
+                  <span class="value-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="19" height="19">
+                      <rect x="2.5" y="5" width="19" height="14" rx="2" /><path d="m3 7 9 6 9-6" />
+                    </svg>
+                  </span>
+                  Email
+                </dt>
+                <dd><a href="mailto:sergiohazary@gmail.com">sergiohazary@gmail.com</a></dd>
+              </div>
+
+              <div class="contact-row">
+                <dt>
+                  <span class="value-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="19" height="19">
+                      <path d="M21.5 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 4.2 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.6 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
+                    </svg>
+                  </span>
+                  Téléphone
+                </dt>
+                <dd><a href="tel:+261377613287">+261 37 76 132 87</a></dd>
+              </div>
+            </dl>
+
+            <div class="contact-socials">
+              <a href="https://www.github.com/SergioHazary" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub (nouvel onglet)">
+                <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sergio-hazary-4b981431a" target="_blank" rel="noopener noreferrer" aria-label="Mon profil LinkedIn (nouvel onglet)">
+                <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="mailto:sergiohazary@gmail.com" aria-label="M'écrire par email">
+                <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-name">Nom complet <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Jean Dupont" required />
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="f-email" name="email" autocomplete="email" placeholder="jean@entreprise.com" required />
+                <span class="field-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-subject">Sujet <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="f-subject" name="subject" placeholder="Refonte de notre boutique Shopify" required />
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="f-service">Type de prestation <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-service" name="service" required>
+                <option value="" selected>Choisir une prestation…</option>
+                <option value="Développement Back-End">Développement Back-End</option>
+                <option value="Bases de données &amp; Data">Bases de données &amp; Data</option>
+                <option value="Automatisation &amp; IA">Automatisation &amp; IA</option>
+                <option value="Développement Front-End">Développement Front-End</option>
+                <option value="E-Commerce &amp; CMS">E-Commerce &amp; CMS</option>
+                <option value="Support &amp; Infrastructure IT">Support &amp; Infrastructure IT</option>
+                <option value="Autre / à définir">Autre / à définir</option>
+              </select>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="f-message">Votre message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="f-message" name="message" rows="5" placeholder="Contexte, objectif, délai souhaité, budget approximatif…" required></textarea>
+              <span class="field-error" role="alert"></span>
+            </div>
+
+            <!-- Piège à robots : ignoré par les humains, rempli par les scripts -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="f-botcheck">Ne pas remplir</label>
+              <input type="text" id="f-botcheck" name="botcheck" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-label">Envoyer le message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                <path d="M4 12h14M12 6l6 6-6 6" />
+              </svg>
+            </button>
+
+            <p class="form-legal">
+              Vos informations servent uniquement à répondre à votre demande.
+              Aucun partage à des tiers, aucune newsletter.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>Romain Sergio</strong>
+          <p>
+            Développeur IA Automatisation &amp; IT Tech basé à Antananarivo.
+            Back-end, bases de données, e-commerce et workflows automatisés.
+          </p>
+        </div>
+
+        <nav aria-labelledby="footer-nav-title">
+          <h2 id="footer-nav-title">Navigation</h2>
           <ul>
             <li><a href="#home">Accueil</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
             <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expériences</a></li>
             <li><a href="#projects">Projets</a></li>
-            <li><a href="#about">À Propos</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer-section">
-          <h3>Services</h3>
+        <nav aria-labelledby="footer-services-title">
+          <h2 id="footer-services-title">Services</h2>
           <ul>
-            <li><a href="#service-frontend">Front-End</a></li>
-            <li><a href="#service-backend">Back-End</a></li>
-            <li><a href="#service-ecommerce">E-Commerce & CMS</a></li>
-            <li><a href="#service-automation">Automatisation & AI</a></li>
-            <li><a href="#service-data">Data & Base de données</a></li>
-            <li><a href="#service-backoffice">Gestion Back Office</a></li>
+            <li><a href="#service-backend">Développement Back-End</a></li>
+            <li><a href="#service-data">Bases de données &amp; Data</a></li>
+            <li><a href="#service-automation">Automatisation &amp; IA</a></li>
+            <li><a href="#service-frontend">Développement Front-End</a></li>
+            <li><a href="#service-ecommerce">E-Commerce &amp; CMS</a></li>
+            <li><a href="#service-it">Support &amp; Infrastructure IT</a></li>
           </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact</h3>
-          <p style="color: var(--text-secondary); margin-bottom: 5px">sergiohazary@gmail.com</p>
-          <p style="color: var(--text-secondary); margin-bottom: 5px">+261 37 76 132 87</p>
-          <p style="color: var(--text-secondary); margin-bottom: 15px">Antananarivo, Madagascar</p>
-          <div class="social-links">
-            <a href="https://www.github.com/SergioHazary" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/sergio-hazary-4b981431a" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-            <a href="mailto:sergiohazary@gmail.com" aria-label="Email">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        </nav>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Romain Sergio. Tous droits réservés.</p>
+        <p>&copy; <span id="year">2026</span> Romain Sergio. Tous droits réservés.</p>
+        <p><a href="/Romain-Sergio-CV.pdf" download>Télécharger mon CV (PDF)</a></p>
       </div>
     </footer>
 
-    <script src="tooplate-neural-scripts.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
