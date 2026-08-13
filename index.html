@@ -266,8 +266,8 @@
           <div class="about-content">
             <h3>Développeur AI &amp; IT Tech</h3>
             <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px">
-              Développeur passionné basé à Antananarivo, Madagascar,
-              spécialisé dans le développement web du Front - End au Back - End, en passant par le CMS et Automatisation IA.
+              Développeur basé à Antananarivo, Madagascar,
+              spécialisé dans le développement côté Front - End au Back - End, en passant par le CMS et Automatisation IA.
               Avec plus de 8 ans d'expérience dans le domaine IT, je crée des
               plateformes e-commerce performantes, des interfaces web modernes et
               des outils d'automatisation IA.
@@ -314,8 +314,6 @@
       <!-- SKILLS -->
       <section id="skills" class="fade-in">
         <h2 class="section-title">COMPÉTENCES</h2>
-        <p class="section-subtitle">Mes compétences techniques et leur niveau de maîtrise</p>
-
         <div class="skills-bars-container">
           <div class="skill-bar-item">
             <div class="skill-bar-header">
@@ -423,8 +421,6 @@
       <!-- EXPERIENCES -->
       <section id="experience" class="fade-in">
         <h2 class="section-title">EXPÉRIENCES</h2>
-        <p class="section-subtitle">Mon parcours professionnel</p>
-
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
@@ -508,9 +504,7 @@
       <!-- SERVICES -->
       <section id="services" class="fade-in">
         <h2 class="section-title">SERVICES</h2>
-        <p class="section-subtitle">Des solutions digitales complètes pour vos besoins</p>
         <div class="services-grid">
-
           <div class="service-card glass-card" id="service-frontend">
             <div class="service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="48" height="48" aria-hidden="true">
@@ -620,14 +614,54 @@
             </div>
           </div>
 
+          <div class="service-card glass-card" id="service-dataeng">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" width="48" height="48" aria-hidden="true">
+                <circle cx="4.5" cy="6" r="2.5" />
+                <circle cx="4.5" cy="18" r="2.5" />
+                <circle cx="19.5" cy="12" r="2.5" />
+                <path d="M7 6.6c4 0 5 5.4 9.2 5.4" />
+                <path d="M7 17.4c4 0 5-5.4 9.2-5.4" />
+              </svg>
+            </div>
+            <h3>Data Engineering</h3>
+            <p>Construction des chaînes qui amènent la donnée là où elle sert : extraction depuis vos sources (API, fichiers, bases, scraping), nettoyage et normalisation, puis chargement dans une base exploitable. Pipelines planifiés, journalisés et rejouables en cas d'échec, pour que vos tableaux de bord reposent sur des chiffres à jour et fiables.</p>
+            <div class="service-tags">
+              <span>Python</span>
+              <span>SQL &amp; PL/SQL</span>
+              <span>PostgreSQL</span>
+              <span>ETL</span>
+              <span>N8N</span>
+            </div>
+          </div>
+
+          <div class="service-card glass-card" id="service-architecture">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="1.5" width="48" height="48" aria-hidden="true">
+                <rect x="9" y="2" width="6" height="5" rx="1.5" />
+                <rect x="2" y="16" width="6" height="5" rx="1.5" />
+                <rect x="16" y="16" width="6" height="5" rx="1.5" />
+                <path d="M12 7v6.5" />
+                <path d="M5 16v-2.5h14V16" />
+              </svg>
+            </div>
+            <h3>Architecture des Systèmes d'Information</h3>
+            <p>Mise à plat de votre existant, puis conception de la cible : quelles applications, quelles bases, quels échanges entre elles. Je cartographie les flux, supprime les doubles saisies, définis les intégrations par API et la gestion des accès — de la couche réseau à l'ERP. Livré avec une documentation qu'une autre équipe peut reprendre.</p>
+            <div class="service-tags">
+              <span>Odoo</span>
+              <span>API REST</span>
+              <span>Active Directory</span>
+              <span>Modélisation</span>
+              <span>Documentation</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" class="fade-in">
         <h2 class="section-title">PROJETS</h2>
-        <p class="section-subtitle">Découvrez mes réalisations récentes</p>
-
         <div class="project-filters" role="group" aria-label="Filtrer les projets par catégorie">
           <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
           <button type="button" class="filter-btn" data-filter="ecommerce" aria-pressed="false">E-Commerce</button>
@@ -907,6 +941,8 @@
                 <option value="Automatisation et AI">Automatisation &amp; AI</option>
                 <option value="Data et Base de données">Data &amp; Base de données</option>
                 <option value="Gestion Back Office">Gestion Back Office</option>
+                <option value="Data Engineering">Data Engineering</option>
+                <option value="Architecture des Systemes d'Information">Architecture des Systèmes d'Information</option>
                 <option value="Autre">Autre</option>
               </select>
               <span class="field-error" role="alert"></span>
@@ -962,6 +998,8 @@
             <li><a href="#service-automation">Automatisation &amp; AI</a></li>
             <li><a href="#service-data">Data &amp; Base de données</a></li>
             <li><a href="#service-backoffice">Gestion Back Office</a></li>
+            <li><a href="#service-dataeng">Data Engineering</a></li>
+            <li><a href="#service-architecture">Architecture des SI</a></li>
           </ul>
         </div>
 
