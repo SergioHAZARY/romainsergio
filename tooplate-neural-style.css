@@ -2277,7 +2277,6 @@ textarea:focus-visible {
     /* Bord droit exact du rail : 15 px de décalage + 60 px de large. Toute
        autre valeur décale le centre optique de la moitié de l'écart. */
     --rail-space: 75px;
-    --shell-max: 1500px;
 }
 
 @media (min-width: 769px) {
@@ -2287,33 +2286,41 @@ textarea:focus-visible {
     }
 }
 
-/* Enveloppe commune : sections et pied de page suivent la même largeur. */
+/* Plein écran : plus aucun plafond de largeur, seule une gouttière latérale
+   sépare le contenu des bords. */
 section {
-    max-width: var(--shell-max);
-    padding-left: clamp(18px, 3.5vw, 50px);
-    padding-right: clamp(18px, 3.5vw, 50px);
+    max-width: none;
+    padding-left: clamp(18px, 3vw, 56px);
+    padding-right: clamp(18px, 3vw, 56px);
 }
 
-.footer-content {
-    max-width: var(--shell-max);
-}
-
-/* Blocs internes : ils étaient les plus étroits, donc les plus visibles au
-   milieu d'une section élargie. */
+.footer-content,
 .timeline,
 .skills-bars-container,
-.education-grid {
-    max-width: 1100px;
-}
-
+.education-grid,
 .skills-tags {
-    max-width: 1200px;
+    max-width: none;
 }
 
-/* 6 services : 3 colonnes donnent deux rangées pleines, là où le plancher de
-   320 px en produisait 4 puis une rangée orpheline de 2. */
+/* Le portrait mesure 300 px : sans colonne fixe, la proportion 1fr 2fr lui
+   réservait un tiers de l'écran, soit un vide de plusieurs centaines de
+   pixels à sa droite. */
+@media (min-width: 769px) {
+    .about-container {
+        grid-template-columns: 320px minmax(0, 1fr);
+    }
+}
+
+/* Le nombre de colonnes suit la largeur disponible : à pleine largeur, deux
+   colonnes donneraient des cartes de près de 900 px, au-delà de la taille
+   réelle des captures (800 px), donc floues à l'agrandissement.
+   min(100%, …) empêche tout débordement sur écran étroit. */
+.projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+}
+
 .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
 }
 
 /* Le libellé et l'icône forment un groupe centré dans le bouton. */
