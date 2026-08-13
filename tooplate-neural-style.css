@@ -2255,3 +2255,81 @@ textarea:focus-visible {
         font-size: 0.8rem;
     }
 }
+
+/* =========================================================================
+   H. LARGEUR DU CONTENU
+   -------------------------------------------------------------------------
+   Deux problèmes traités ensemble, car ils ont la même cause.
+
+   1. Le rail de navigation est en « position: fixed » : il ne participe donc
+      pas au flux. Le contenu se centrait sur toute la largeur de la fenêtre,
+      alors que le rail masque environ 90 px à gauche — tout paraissait
+      décalé d'une quarantaine de pixels vers la gauche, y compris le bouton
+      du hero. On réserve la place du rail pour recentrer sur la zone
+      réellement visible.
+
+   2. Le contenu était plafonné à 1200 px, et les blocs internes (parcours,
+      compétences, formation) à 800 px. Sur un écran large, cela laissait de
+      vastes marges vides et tassait les cartes. Les plafonds sont relevés.
+   ========================================================================= */
+
+:root {
+    /* Bord droit exact du rail : 15 px de décalage + 60 px de large. Toute
+       autre valeur décale le centre optique de la moitié de l'écart. */
+    --rail-space: 75px;
+    --shell-max: 1500px;
+}
+
+@media (min-width: 769px) {
+    main,
+    footer {
+        padding-left: var(--rail-space);
+    }
+}
+
+/* Enveloppe commune : sections et pied de page suivent la même largeur. */
+section {
+    max-width: var(--shell-max);
+    padding-left: clamp(18px, 3.5vw, 50px);
+    padding-right: clamp(18px, 3.5vw, 50px);
+}
+
+.footer-content {
+    max-width: var(--shell-max);
+}
+
+/* Blocs internes : ils étaient les plus étroits, donc les plus visibles au
+   milieu d'une section élargie. */
+.timeline,
+.skills-bars-container,
+.education-grid {
+    max-width: 1100px;
+}
+
+.skills-tags {
+    max-width: 1200px;
+}
+
+/* 6 services : 3 colonnes donnent deux rangées pleines, là où le plancher de
+   320 px en produisait 4 puis une rangée orpheline de 2. */
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+/* Le libellé et l'icône forment un groupe centré dans le bouton. */
+.hero-btn {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    /* Sur mobile le rail laisse place à la barre du haut : aucune réserve
+       latérale, on récupère toute la largeur. */
+    main,
+    footer {
+        padding-left: 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
